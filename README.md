@@ -20,6 +20,7 @@ As we don't want to have our .git files and this README in our skeleton, we expo
 
     git clone https://github.com/garethr/puppet-module-skeleton
     cd puppet-module-skeleton
+    rm -fr $HOME/.puppet/var/puppet-module/skeleton || true
     find skeleton -type f | git checkout-index --stdin --force --prefix="$HOME/.puppet/var/puppet-module/" --
 
 ## Usage
